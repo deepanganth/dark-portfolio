@@ -94,9 +94,7 @@
                 height: 3rem !important;
                 margin-left: 1rem !important;
                 margin-right: 1rem !important;
-
             }
-
         }
         /*nav section end*/
         /* hero section start */
@@ -225,7 +223,7 @@
         /* power-section-start */
         .power-section{
             background-color: black;
-            background: url(./assets/background3.jpg);
+            background: url(./assets/background4.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -249,12 +247,19 @@
             font-size: 2rem;
             font-family: 'Saira Condensed', sans-serif;
         }
-        .icons{
+        .icons-1{
             height: 50vh;
             display: flex;
             flex-wrap: wrap;
             margin: 0 auto;
         }
+        .icons-2{
+            height: 30vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+
         .icons img{
             display: block;
             width: 5rem;
