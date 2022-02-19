@@ -1,0 +1,261 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body {
+            margin:0;
+            padding:0;
+            }
+        /*nav section start*/
+        
+        .navbar {
+            width: 100%;
+            position: relative;
+            top: 0;
+            background-color: transparent;
+        }
+        .nav{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            font-size: 1.2rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .nav a{
+            text-decoration: none;
+            color: white;
+        }
+        .nav li{
+            margin-top: -1.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .dev img {
+            margin-top: .5em;
+            max-width: 10rem;
+            height: 2rem;
+        }
+        .nav a:hover {
+            color: rgb(255, 255, 255);
+            text-shadow: 0 0 10px dodgerblue, 0 0 20px dodgerblue, 0 0 40px dodgerblue;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .nav {
+                display: none;
+            }
+            .dev img {
+                max-width: 7rem;
+                max-height: 1.5rem;
+            }
+            .hero-name h1{
+                font-size: 3rem;
+                letter-spacing: .3rem;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .hero-name{
+                padding-top: 5rem;
+            }
+            .hero-name p{
+                font-size: 2rem;
+            }
+            .hero-name img{
+                width: 3rem !important;
+                height: 3rem !important;
+            }
+            .hero-section{
+                height: 100vh !important;
+            }
+            .about-section{
+                height: 150vh !important;
+                display: flex;
+                flex-direction: column;
+            }
+            .dev-deepan{
+                margin-top: -32rem;
+            }
+            .dev-deepan img{
+                width: 17rem;
+                height: 30rem;
+                margin-left: 4.5rem;
+                margin-top: 27rem;
+            }
+            .about-content h1{
+                font-size: 2rem !important;
+            }
+            .about-content{
+                margin-left: 1rem;
+                margin-top: -15rem;
+            }
+            .icons img{
+                width: 3rem !important;
+                height: 3rem !important;
+                margin-left: 1rem !important;
+                margin-right: 1rem !important;
+
+            }
+
+        }
+        /*nav section end*/
+        /* hero section start */
+        
+        .hero-section {
+            height: 120vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background-color: black; */
+            background: url(./assets/background1.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .hero-name {
+            font-family: 'Saira Condensed', sans-serif;
+            color: white;
+            margin-top: 3rem;
+            font-size: 3rem;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+            letter-spacing: 1.3rem;
+            animation-name: light;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        
+        .hero-name .blue {
+            color: dodgerblue;
+        }
+        .hero-name img{
+            width: 4rem;
+            height: 4rem;
+        }
+        .social{
+            display: flex;
+            justify-content: center;
+        }
+
+        .social img{
+            width: 3.5rem;
+            height: 3.5rem;
+            padding: 5px;
+        }
+        
+        .check {
+            max-width: 16rem;
+            max-height: 3rem;
+            margin-top: 5rem;
+            margin:20px auto;
+            color: dodgerblue;
+            border-radius: 5px;
+            border: dodgerblue solid 1px;
+            cursor: pointer;
+        }
+        
+        .check h2 {
+            font-family: 'Saira Condensed', sans-serif;
+            text-align: center;
+            padding-right: 10px;
+            padding-left: 10px;
+
+        }
+        .down-img{
+            margin-top: -1rem;
+            height: 20rem;
+            overflow: hidden;
+        }
+        .about-content img{
+            width: 2rem;
+            height: 2rem;
+            margin-bottom: -7px;
+            margin-right: 5px;
+        }
+        
+        @keyframes light {
+            0% {
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+            }
+            25% {
+                text-shadow: none;
+            }
+            50% {
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+            }
+            75% {
+                text-shadow: none;
+            }
+            100% {
+                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+            }
+        }
+        /* hero section end */
+
+        /* about-section-start */
+        .about-section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            font-family: 'Saira Condensed', sans-serif;
+            letter-spacing: .2rem;
+
+        }
+        .about-content h1{
+            color: tomato;
+            font-size: 4rem;
+        }
+        .about-content p{
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .about-content h3{
+            color: dodgerblue;
+            font-size: 1.5rem;
+        }
+        /* about-section-end */
+
+        /* power-section-start */
+        .power-section{
+            background-color: black;
+            width: 100%;
+            height: 200vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .power-section h1{
+            text-align: center;
+            color: tomato;
+            font-size: 4rem;
+            font-family: 'Saira Condensed', sans-serif;
+        }
+        .power-section h2{
+            padding-top: 2rem;
+            text-align: center;
+            color: dodgerblue;
+            font-size: 2rem;
+            font-family: 'Saira Condensed', sans-serif;
+        }
+        .icons{
+            height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+        }
+        .icons img{
+            display: block;
+            width: 5rem;
+            height: 5rem;
+            margin-top: 3rem;
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        /* power-section-end */
