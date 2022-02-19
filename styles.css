@@ -225,8 +225,13 @@
         /* power-section-start */
         .power-section{
             background-color: black;
+            background: url(./assets/background3.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
             width: 100%;
-            height: 200vh;
+            height: 120vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -259,3 +264,18 @@
             margin-right: 5rem;
         }
         /* power-section-end */
+
+        /* footer-section-start */
+        footer{
+            background-color: rgb(20, 20, 20);
+            color: rgb(216, 214, 214);
+            word-spacing: 5px;
+            font-family: 'Saira Condensed', sans-serif;
+            text-align: center;
+        }
+        footer img{
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: -1rem;
+        }
+        /* footer-section-end */
