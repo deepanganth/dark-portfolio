@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -76,11 +79,11 @@
 
     <!-- power-section-start -->
     <div class="power-section">
-        <div>
+        <div data-aos="fade-up">
             <h1>SUPER POWERS</h1>
             <h2>FULL STACK DEVELOPMENT</h2>
         </div>
-        <div class="icons">
+        <div class="icons-1 icons" data-aos="fade-up">
             <img src="./assets/full-stack-icons/html5-original.svg" alt="">
             <img src="./assets/full-stack-icons/css3-original.svg" alt="">
             <img src="./assets/full-stack-icons/javascript-original.svg" alt="">
@@ -94,10 +97,10 @@
             <img src="./assets/full-stack-icons/wordpress-original.svg" alt="">
             <img src="./assets/full-stack-icons/apache-original.svg" alt="">
         </div>
-        <div>
+        <div data-aos="fade-up">
             <h2>PROGRAMMING LANGUAGES</h2>
         </div>
-        <div class="icons">
+        <div class="icons-2 icons" data-aos="fade-up">
             <img src="./assets/programming-icons/python-original.svg" alt="">
             <img src="./assets/programming-icons/c-original.svg" alt="">
             <img src="./assets/programming-icons/cplusplus-original.svg" alt="">
@@ -110,7 +113,9 @@
         <h1>Made with <span><img src="./assets/icons8-heart-100.png" alt=""></span> by deepanganth</h1>
     </footer>
     <!-- power-section-end -->
-
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
