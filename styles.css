@@ -95,6 +95,14 @@
                 margin-left: 1rem !important;
                 margin-right: 1rem !important;
             }
+            .foot{
+                font-size: .5rem;
+            }
+            .foot img{
+                width: 1rem !important;
+                height: 1rem !important;
+                margin-bottom: .01px;
+            }
         }
         /*nav section end*/
         /* hero section start */
@@ -229,7 +237,7 @@
             background-size: cover;
             background-attachment: fixed;
             width: 100%;
-            height: 120vh;
+            height: 130vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -248,12 +256,14 @@
             font-family: 'Saira Condensed', sans-serif;
         }
         .icons-1{
+            width: 70vw;
             height: 50vh;
             display: flex;
             flex-wrap: wrap;
             margin: 0 auto;
         }
         .icons-2{
+            width: 70vw;
             height: 30vh;
             display: flex;
             flex-wrap: wrap;
@@ -266,21 +276,23 @@
             height: 5rem;
             margin-top: 3rem;
             margin-left: 5rem;
-            margin-right: 5rem;
         }
         /* power-section-end */
 
         /* footer-section-start */
         footer{
+            font-size: 12px;
             background-color: rgb(20, 20, 20);
             color: rgb(216, 214, 214);
             word-spacing: 5px;
             font-family: 'Saira Condensed', sans-serif;
             text-align: center;
+            overflow: hidden;
+
         }
         footer img{
-            width: 3rem;
-            height: 3rem;
-            margin-bottom: -1rem;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin-bottom: -.1rem;
         }
         /* footer-section-end */
