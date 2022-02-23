@@ -1,298 +1,121 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html,body {
-            margin:0;
-            padding:0;
-            }
-        /*nav section start*/
-        
-        .navbar {
-            width: 100%;
-            position: relative;
-            top: 0;
-            background-color: transparent;
-        }
-        .nav{
-            display: flex;
-            justify-content: flex-end;
-            list-style: none;
-            font-size: 1.2rem;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .nav a{
-            text-decoration: none;
-            color: white;
-        }
-        .nav li{
-            margin-top: -1.5rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-        .dev img {
-            margin-top: .5em;
-            max-width: 10rem;
-            height: 2rem;
-        }
-        .nav a:hover {
-            color: rgb(255, 255, 255);
-            text-shadow: 0 0 10px dodgerblue, 0 0 20px dodgerblue, 0 0 40px dodgerblue;
-        }
-        
-        @media only screen and (max-width: 700px) {
-            .nav {
-                display: none;
-            }
-            .dev img {
-                max-width: 7rem;
-                max-height: 1.5rem;
-            }
-            .hero-name h1{
-                font-size: 3rem;
-                letter-spacing: .3rem;
-                margin-left: 0;
-                margin-right: 0;
-            }
-            .hero-name{
-                padding-top: 5rem;
-            }
-            .hero-name p{
-                font-size: 2rem;
-            }
-            .hero-name img{
-                width: 3rem !important;
-                height: 3rem !important;
-            }
-            .hero-section{
-                height: 100vh !important;
-            }
-            .about-section{
-                height: 150vh !important;
-                display: flex;
-                flex-direction: column;
-            }
-            .dev-deepan{
-                margin-top: -32rem;
-            }
-            .dev-deepan img{
-                width: 17rem;
-                height: 30rem;
-                margin-left: 4.5rem;
-                margin-top: 27rem;
-            }
-            .about-content h1{
-                font-size: 2rem !important;
-            }
-            .about-content{
-                margin-left: 1rem;
-                margin-top: -15rem;
-            }
-            .icons img{
-                width: 3rem !important;
-                height: 3rem !important;
-                margin-left: 1rem !important;
-                margin-right: 1rem !important;
-            }
-            .foot{
-                font-size: .5rem;
-            }
-            .foot img{
-                width: 1rem !important;
-                height: 1rem !important;
-                margin-bottom: .01px;
-            }
-        }
-        /*nav section end*/
-        /* hero section start */
-        
-        .hero-section {
-            height: 120vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            /* background-color: black; */
-            background: url(./assets/background1.jpg);
-            background-position: center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        .hero-name {
-            font-family: 'Saira Condensed', sans-serif;
-            color: white;
-            margin-top: 3rem;
-            font-size: 3rem;
-            text-align: center;
-            position: relative;
-            cursor: pointer;
-            letter-spacing: 1.3rem;
-            animation-name: light;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
-        }
-        
-        .hero-name .blue {
-            color: dodgerblue;
-        }
-        .hero-name img{
-            width: 4rem;
-            height: 4rem;
-        }
-        .social{
-            display: flex;
-            justify-content: center;
-        }
+<!DOCTYPE html>
+<html lang="en">
 
-        .social img{
-            width: 3.5rem;
-            height: 3.5rem;
-            padding: 5px;
-        }
-        
-        .check {
-            max-width: 16rem;
-            max-height: 3rem;
-            margin-top: 5rem;
-            margin:20px auto;
-            color: dodgerblue;
-            border-radius: 5px;
-            border: dodgerblue solid 1px;
-            cursor: pointer;
-        }
-        
-        .check h2 {
-            font-family: 'Saira Condensed', sans-serif;
-            text-align: center;
-            padding-right: 10px;
-            padding-left: 10px;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>deepanganth portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100&display=swap" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
 
-        }
-        .down-img{
-            margin-top: -1rem;
-            height: 20rem;
-            overflow: hidden;
-        }
-        .about-content img{
-            width: 2rem;
-            height: 2rem;
-            margin-bottom: -7px;
-            margin-right: 5px;
-        }
-        
-        @keyframes light {
-            0% {
-                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
-            }
-            25% {
-                text-shadow: none;
-            }
-            50% {
-                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
-            }
-            75% {
-                text-shadow: none;
-            }
-            100% {
-                text-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
-            }
-        }
-        /* hero section end */
+<body>
 
-        /* about-section-start */
-        .about-section{
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: space-around;
-            background-color: black;
-            font-family: 'Saira Condensed', sans-serif;
-            letter-spacing: .2rem;
+    <!-- hero-section-start -->
+    <div class="hero-section" id="home">
+        <div class="navbar">
+            <div class="dev">
+                <img src="assets/logo.gif" alt="">
+            </div>
+            <div class="nav">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </div>
+        <div class="hero-name">
+            <p><span><img src="assets/waving-hand.gif" alt=""></span> HELLO</p>
+            <h1><span>I'm</span> DEEPANGANTH</h1>
+            <h1 class="blue">WEB DEVELOPER</h1>
+        </div> 
+        <div class="social">
+            <div><img src="./assets/social/Gmail.svg" alt=""></div>
+            <div><img src="./assets/social/Github.svg" alt=""></div>
+            <div><img src="./assets/social/Discord.svg" alt=""></div>
+            <div><img src="./assets/social/Instagram.svg" alt=""></div>
+            <div><img src="./assets/social/LinkedIN.svg" alt=""></div>
+            <div><img src="./assets/social/Twitter.svg" alt=""></div>
+        </div>
+        <div class="check">
+            <h2>check out me </h2>
+        </div>
+        <div class="down-img">
+            <img src="assets/fell-down.gif" alt="">
+        </div>
+    </div>
+    <!-- hero-section-end -->
 
-        }
-        .about-content h1{
-            color: tomato;
-            font-size: 4rem;
-        }
-        .about-content p{
-            color: white;
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        .about-content h3{
-            color: dodgerblue;
-            font-size: 1.5rem;
-        }
-        /* about-section-end */
 
-        /* power-section-start */
-        .power-section{
-            background-color: black;
-            background: url(./assets/background4.jpg);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            width: 100%;
-            height: 130vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .power-section h1{
-            text-align: center;
-            color: tomato;
-            font-size: 4rem;
-            font-family: 'Saira Condensed', sans-serif;
-        }
-        .power-section h2{
-            padding-top: 2rem;
-            text-align: center;
-            color: dodgerblue;
-            font-size: 2rem;
-            font-family: 'Saira Condensed', sans-serif;
-        }
-        .icons-1{
-            width: 70vw;
-            height: 50vh;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-        }
-        .icons-2{
-            width: 70vw;
-            height: 30vh;
-            display: flex;
-            flex-wrap: wrap;
-            margin: 0 auto;
-        }
+    <!-- about-section-start -->
+    <div class="about-section" id="about">
+        <div class="dev-deepan" data-aos="fade-right">
+            <img src="assets/dev_deepan.png">
+        </div>
+        <div class="about-content " data-aos="fade-left">
+            <h1>WORK SUMMARY</h1>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Created web-based static websites</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Optimized home and landing pages</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Designed and developed email campaigns with Javascript</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Designed and coded websites, from layout to function</p>
+            <h1>ACADEMIC BACKGROUND</h1>
+            <h3>B.E IN COMPUTER SCIENCE AND ENGINEERING</h3>
+            <h3>KIT - KALAIGNAR KARUNANIDHI INSTITUTE OF <br> TECHNOLOGY, COIMBATORE</h3>
+            <br>
+            <p><span><img src="assets/circled-right.png" alt=""></span>I'am in my Second Year</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Member, Hack Club</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Member, Google Developer Student Club</p>
+            <p><span><img src="assets/circled-right.png" alt=""></span>Member, NCDRC</p>
+        </div>
+    </div>
+    <!-- about-section-end -->
 
-        .icons img{
-            display: block;
-            width: 5rem;
-            height: 5rem;
-            margin-top: 3rem;
-            margin-left: 5rem;
-        }
-        /* power-section-end */
+    <!-- power-section-start -->
+    <div class="power-section" id="skills">
+        <div data-aos="fade-up">
+            <h1>SUPER POWERS</h1>
+            <h2>FULL STACK DEVELOPMENT</h2>
+        </div>
+        <div class="icons-1 icons" data-aos="fade-up">
+            <img src="./assets/full-stack-icons/html5-original.svg" alt="">
+            <img src="./assets/full-stack-icons/css3-original.svg" alt="">
+            <img src="./assets/full-stack-icons/javascript-original.svg" alt="">
+            <img src="./assets/full-stack-icons/react-original.svg" alt="">
+            <img src="./assets/full-stack-icons/angularjs-original.svg" alt="">
+            <img src="./assets/full-stack-icons/nodejs-original.svg" alt="">
+            <img src="./assets/full-stack-icons/jquery-original.svg" alt="">
+            <img src="./assets/full-stack-icons/mongodb-original.svg" alt="">
+            <img src="./assets/full-stack-icons/mysql-original.svg" alt="">
+            <img src="./assets/full-stack-icons/php-original.svg" alt="">
+            <img src="./assets/full-stack-icons/wordpress-original.svg" alt="">
+            <img src="./assets/full-stack-icons/apache-original.svg" alt="">
+        </div>
+        <div data-aos="fade-up">
+            <h2>PROGRAMMING LANGUAGES</h2>
+        </div>
+        <div class="icons-2 icons" data-aos="fade-up">
+            <img src="./assets/programming-icons/python-original.svg" alt="">
+            <img src="./assets/programming-icons/c-original.svg" alt="">
+            <img src="./assets/programming-icons/cplusplus-original.svg" alt="">
+            <img src="./assets/programming-icons/csharp-original.svg" alt="">
+            <img src="./assets/programming-icons/java-original.svg" alt="">
+            <img src="./assets/programming-icons/r-original.svg" alt="">
+        </div>
+    </div>
+    <footer class="foot">
+        <h1>Made with <span><img src="./assets/icons8-heart-100.png" alt=""></span> by deepanganth</h1>
+    </footer>
+    <!-- power-section-end -->
+    <script src="script.js"></script>
+</body>
 
-        /* footer-section-start */
-        footer{
-            font-size: 12px;
-            background-color: rgb(20, 20, 20);
-            color: rgb(216, 214, 214);
-            word-spacing: 5px;
-            font-family: 'Saira Condensed', sans-serif;
-            text-align: center;
-            overflow: hidden;
-
-        }
-        footer img{
-            width: 1.5rem;
-            height: 1.5rem;
-            margin-bottom: -.1rem;
-        }
-        /* footer-section-end */
+</html>
